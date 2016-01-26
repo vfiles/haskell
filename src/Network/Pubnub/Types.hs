@@ -30,7 +30,7 @@ module Network.Pubnub.Types
 
 import GHC.Generics
 
-import Control.Applicative (empty)
+import Control.Applicative (empty, (<$>), pure)
 import Data.Text.Read
 import Data.Aeson
 import Data.Aeson.TH
