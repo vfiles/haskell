@@ -171,7 +171,7 @@ publish pn channel msg = do
                             , sig
                             , encodeUtf8 channel
                             , bsFromInteger $ jsonp_callback pn
-                            , encrypt (ctx pn) (iv pn) encoded_msg]
+                            , urlEncode False $ encrypt (ctx pn) (iv pn) encoded_msg]
             (userIdOptions pn)
             Nothing
   res <- withManager $ httpLbs req
