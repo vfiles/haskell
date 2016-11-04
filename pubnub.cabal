@@ -17,7 +17,7 @@ cabal-version:          >=1.10
 library
   exposed-modules:      Network.Pubnub, Network.Pubnub.Types
 
-  build-depends:        base >=4.6 && <4.9
+  build-depends:        base >=4.6 && <5
                         , aeson >= 0.7.0.0
                         , conduit >= 1.1.0.2
                         , conduit-extra >= 1.1.0
